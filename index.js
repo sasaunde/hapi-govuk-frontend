@@ -1,4 +1,7 @@
+const viewOptions = require('/lib/view-options')
+
 const register = function (server, opts = {}) {
+  const { analyticsAccount, appVersion, assetPath, directories, } = opts
   server.register([
     {
       plugin: require('hapi-public-route'),
@@ -8,19 +11,27 @@ const register = function (server, opts = {}) {
           'public/static',
           'public/build',
           'node_modules/govuk-frontend/govuk',
-          'node_modules/govuk-frontend/govuk/assets'
+          'node_modules/govuk-frontend/govuk/assets',
         ],
-        tags: ['asset', 'always']
-      }
+        tags: ['asset', 'always'],
+      },
     },
     {
       plugin: require('hapi-robots'),
       options: {
         // will disallow everyone from every path:
-        '*': ['/']
-      }
+        '*': ['/'],
+      },
     },
-    require('./lib/view')
+    {
+      plugin: require('@hapi/vision'),
+      options: viewOptions({
+        appVersion: pkg.version,
+        assetPath: '/assets',
+        analyticsAccount,
+
+      }),
+    },
   ])
 }
 
@@ -30,5 +41,5 @@ exports.plugin = {
   name: pkg.name,
   register,
   once: true,
-  pkg
+  pkg,
 }
