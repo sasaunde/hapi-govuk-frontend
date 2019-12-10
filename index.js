@@ -1,7 +1,25 @@
 const register = function (server, opts = {}) {
   server.register([
-    require('./lib/public'),
-    require('./lib/robots'),
+    {
+      plugin: require('hapi-public-route'),
+      options: {
+        path: '/assets/{path*}',
+        directories: [
+          'public/static',
+          'public/build',
+          'node_modules/govuk-frontend/govuk',
+          'node_modules/govuk-frontend/govuk/assets'
+        ],
+        tags: ['asset', 'always']
+      }
+    },
+    {
+      plugin: require('hapi-robots'),
+      options: {
+        // will disallow everyone from every path:
+        '*': ['/']
+      }
+    },
     require('./lib/view')
   ])
 }
