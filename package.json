@@ -23,18 +23,16 @@
   "homepage": "https://github.com/ajaxscape/hapi-govuk-frontend#readme",
   "dependencies": {
     "@hapi/vision": "^5.5.4",
-    "defra-logging-facade": "git+https://github.com/DEFRA/defra-logging-facade.git#master",
     "glob": "^7.1.6",
     "govuk-frontend": "3.4.0",
     "hapi-public-route": "^0.1.6",
-    "hapi-robots": "^3.2.0",
     "nunjucks": "3.2.0"
   },
   "devDependencies": {
     "@hapi/code": "^7.0.0",
     "@hapi/lab": "^21.0.0",
     "codeclimate-test-reporter": "0.5.1",
-    "eslint": "^6.7.2",
+    "eslint": "^6.8.0",
     "sinon": "^7.5.0",
     "standard": "^14.3.1"
   }
