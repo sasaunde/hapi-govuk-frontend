@@ -1,12 +1,12 @@
 {
   "name": "hapi-govuk-frontend",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Hapi plugin to register govuk frontend",
   "author": "Department for Environment, Food & Rural Affairs",
   "license": "SEE LICENSE IN LICENSE",
   "main": "index.js",
   "engines": {
-    "node": "10.x"
+    "node": ">=10.x"
   },
   "scripts": {
     "lint": "./node_modules/.bin/standard",
@@ -25,7 +25,7 @@
     "@hapi/vision": "^5.5.4",
     "glob": "^7.1.6",
     "govuk-frontend": "3.4.0",
-    "hapi-public-route": "^0.1.6",
+    "hapi-public-route": "^0.1.7",
     "nunjucks": "3.2.0"
   },
   "devDependencies": {
