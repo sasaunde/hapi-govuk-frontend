@@ -25,7 +25,7 @@
     "@hapi/vision": "^5.5.4",
     "glob": "^7.1.6",
     "govuk-frontend": "3.4.0",
-    "hapi-public-route": "^0.1.7",
+    "hapi-public-route": "^0.1.6",
     "nunjucks": "3.2.0"
   },
   "devDependencies": {
