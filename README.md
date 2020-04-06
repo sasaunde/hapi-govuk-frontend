@@ -33,6 +33,12 @@ await server.register([{
    assetDirectories: ['public/static', 'public/build'],
    serviceName: 'demo-system',
    viewPath: 'server/modules,
+   includePaths: [
+     // folders where partial views and macros can be found 
+     // if this is not specified (not recommended) an attempt will be made crawling the node_modules to find the paths
+     'node_modules/govuk-frontend',
+     'node_modules/@ministryofjustice/frontend'
+   ],
    options : { 
      tags: ['asset']
    },
