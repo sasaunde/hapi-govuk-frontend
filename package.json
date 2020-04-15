@@ -1,5 +1,5 @@
 {
-  "name": "@envag/hapi-govuk-frontend",
+  "name": "@envage/hapi-govuk-frontend",
   "version": "0.2.0",
   "description": "Hapi plugin to register govuk frontend",
   "author": "Department for Environment, Food & Rural Affairs",

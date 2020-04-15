@@ -5,7 +5,7 @@ Hapi plugin to register govuk frontend
 [![Code Climate](https://codeclimate.com/github/DEFRA/hapi-govuk-frontend/badges/gpa.svg)](https://codeclimate.com/github/DEFRA/hapi-govuk-frontend)
 
 ## Installation
-`npm install --save @envag/hapi-govuk-frontend`
+`npm install --save @envage/hapi-govuk-frontend`
 
 ## Usage
 Please note:
@@ -16,7 +16,7 @@ const Hapi = require('hapi')
 const server = hapi.server()
 
 await server.register([{
- plugin: require('@envag/hapi-govuk-frontend'),
+ plugin: require('@envage/hapi-govuk-frontend'),
  options: {
    analyticsAccount: 'UA-123456789-0',
    assetPath: '/assets',
