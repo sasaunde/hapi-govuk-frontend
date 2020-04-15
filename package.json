@@ -40,6 +40,7 @@
     "govuk-frontend": "3.x"
   },
   "files": [
+    "application.scss",
     "index.js",
     "lib/find-njk-folders.js",
     "lib/view.js",
