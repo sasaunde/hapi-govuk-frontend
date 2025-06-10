@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/DEFRA/hapi-govuk-frontend#readme",
   "dependencies": {
-    "@hapi/vision": "^5.5.4",
+    "@hapi/vision": "^7.0.3",
     "glob": "^7.1.6",
     "hapi-public-route": "^0.1.6",
     "nunjucks": "^3.2.1"
@@ -36,8 +36,8 @@
     "standard": "^14.3.1"
   },
   "peerDependencies": {
-    "@hapi/hapi": "19.x",
-    "govuk-frontend": "3.x"
+    "@hapi/hapi": "21.x",
+    "govuk-frontend": "5.10.2"
   },
   "files": [
     "application.scss",
